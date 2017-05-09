@@ -109,11 +109,10 @@ handrankorder = (straightflush, fourofakind, fullhouse,
                  flush, straight, threeofakind,
                  twopair, onepair, highcard)
 
-
 def rank(cards):
     hand = handy(cards)
-    for ranker in handrankorder:
-        rank = ranker(hand)
+    for i in range(len(handrankorder)):
+        rank = handrankorder[i](hand)
         if rank:
             break
     assert rank, "Invalid: Failed to rank cards: %r" % cards
