@@ -1,4 +1,4 @@
-from collections import namedtuple
+﻿from collections import namedtuple
 
 
 class Card(namedtuple('Card', 'face, suit')):
@@ -138,7 +138,7 @@ if __name__ == '__main__':
              "2♥ 3♥ 2♦ 3♣ 3♦",
              "2♥ 7♥ 2♦ 3♣ 3♦",
              "2♥ 7♥ 7♦ 7♣ 7♠",
-             "10♥ j♥ q♥ k♥ a♥"] + [
+             "13♥ j♥ q♥ k♥ a♥"] + [
                 "4♥ 4♠ k♠ 5♦ 10♠",
                 "q♣ 10♣ 7♣ 6♣ 4♣",
             ]
